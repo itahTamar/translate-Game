@@ -45,7 +45,7 @@ function handelSubmit(ev) {
         users.push(newUser); //add the new user into users array
         console.log(users);
         localStorage.setItem('users', JSON.stringify(users)); //sent the array to local storage as string
-        window.location.replace("./index.html"); // its work!!!
+        window.location.replace("./middle.html"); // its work!!!
     }
     catch (error) {
         console.error(error);
@@ -106,7 +106,7 @@ function hendelFinish() {
     window.location.replace("./finish.html");
 }
 function hendelLogOn() {
-    window.location.replace("./login.html");
+    window.location.replace("./index.html");
 }
 //-----------------reander--------------------------------
 //render the user name to the game page
