@@ -62,7 +62,7 @@ function handelSubmit(ev: any) {
 
         localStorage.setItem('users', JSON.stringify(users)) //sent the array to local storage as string
 
-        window.location.replace("./index.html")  // its work!!!
+        window.location.replace("./view/middle.html")  // its work!!!
 
     } catch (error) {
         console.error(error);
@@ -138,7 +138,7 @@ function hendelFinish() {
 }
 
 function hendelLogOn() {
-    window.location.replace("./login.html")
+    window.location.replace("../index.html")
 }
 
 //-----------------reander--------------------------------
@@ -188,7 +188,7 @@ function renderNewWords() {
 }
 
 function renderBack() {
-    window.location.replace("./index.html");
+    window.location.replace("./middle.html");
 }
 
 //move to game

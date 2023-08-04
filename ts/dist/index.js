@@ -18,16 +18,33 @@ var Word = /** @class */ (function () {
     return Word;
 }());
 var words = [
-    new Word('book', 'סֵפֶר'),
-    new Word('adventure', 'הַרפַּתקָה'),
-    new Word('center', 'מֶרְכָּז'),
-    new Word('earth', 'כַּדוּר הָאָרֶץ'),
-    new Word('volcano', 'הַר גַעַשׁ'),
+    new Word('Book', 'סֵפֶר'),
+    new Word('Adventure', 'הַרפַּתקָה'),
+    new Word('Center', 'מֶרְכָּז'),
+    new Word('Earth', 'כַּדוּר הָאָרֶץ'),
+    new Word('Volcano', 'הַר גַעַשׁ'),
     new Word('Mountain', 'הַר'),
-    new Word('lantern', 'פָּנָס'),
-    new Word('raft', 'רַפסוֹדָה'),
+    new Word('Lantern', 'פָּנָס'),
+    new Word('Raft', 'רַפסוֹדָה'),
     new Word('Trip', 'טִיוּל'),
-    new Word('journey', 'מַסָע'),
+    new Word('Journey', 'מַסָע'),
+    new Word('Science', 'מדע'),
+    new Word('Secrets', 'סודות'),
+    new Word('Parchment', 'קלף'),
+    new Word('Crater', 'לוע הר געש'),
+    new Word('Uncle', 'דוד'),
+    new Word('Gate', 'שער'),
+    new Word('Guide', 'מדריך / מורה דרך'),
+    new Word('Tools', 'כלי עבודה'),
+    new Word('Climb', 'לטפס'),
+    new Word('Lantern', 'פנס'),
+    new Word('Cave', 'מערה'),
+    new Word('Tunnels', 'מנהרות'),
+    new Word('Noise', 'רעש'),
+    new Word('Hole', 'חור'),
+    new Word('Road', 'כביש / דרך'),
+    new Word('Sail', 'מפרש'),
+    new Word('Shore', 'חוף'),
 ];
 //---------------------handel----------------
 //login form
@@ -45,7 +62,7 @@ function handelSubmit(ev) {
         users.push(newUser); //add the new user into users array
         console.log(users);
         localStorage.setItem('users', JSON.stringify(users)); //sent the array to local storage as string
-        window.location.replace("./middle.html"); // its work!!!
+        window.location.replace("./view/middle.html"); // its work!!!
     }
     catch (error) {
         console.error(error);
@@ -106,7 +123,7 @@ function hendelFinish() {
     window.location.replace("./finish.html");
 }
 function hendelLogOn() {
-    window.location.replace("./index.html");
+    window.location.replace("../index.html");
 }
 //-----------------reander--------------------------------
 //render the user name to the game page
@@ -141,7 +158,7 @@ function renderNewWords() {
     }
 }
 function renderBack() {
-    window.location.replace("./index.html");
+    window.location.replace("./middle.html");
 }
 //move to game
 function renderPlay() {
